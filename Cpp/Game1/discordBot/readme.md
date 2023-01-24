@@ -9,3 +9,9 @@ Organize in two categories: Attackers and Defenders.
 User selects attack or defence, then a random operator name is given.
 Bonus: Have Operator portraits and Logos for apeal purposes.
 
+Choice of weapons
+
+Assault Rifles
+Shotguns
+DMR/Battle Rifles
+Snipers
