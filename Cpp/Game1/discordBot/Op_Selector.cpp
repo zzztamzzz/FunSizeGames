@@ -41,7 +41,38 @@ vector <OpFORS> attackerCollection{
     {"Hibana", "AR"},
     {"Hibana", "Shotgun"},
     {"Jackal", "AR"},
-    {"Jackal", "Shotgun"}
+    {"Jackal", "Shotgun"},
+    {"Ying", "LMG"},
+    {"Ying", "Shotgun"},
+    {"Zofia", "AR"},
+    {"Zofia", "LMG"},
+    {"Dok", "DMR"},
+    {"Dok", "BosG"},
+    {"Lion", "Vector"},
+    {"Lion", "Shotgun"},
+    {"Lion", "DMR"},
+    {"Finka", "LMG"},
+    {"Finka", "Spear"},
+    {"Mav", "AR"},
+    {"Mav", "DMR"},
+    {"Nomad", "AR1"},
+    {"Nomad", "AR2"},
+    {"Gridlock", "LMG"},
+    {"Nokk", "SMG"},
+    {"Nokk", "Shotgun"},
+    {"Amaru", "AR"},
+    {"Amaru", "Shotgun"},
+    {"Kali", "CAN YOU BREAK THIS?"},
+    {"Iana", "AR1"},
+    {"Iana", "AR2"},
+    {"Ace", "AR"},
+    {"Ace", "Shotgun"},
+    {"Zero", "MP7"},
+    {"Zero", "That other gun"},
+    {"Flores", "AR"},
+    {"Flores", "you pick"},
+    {"OSA", "AR"},
+    {"Osa", "LMG"},
 };
 // Container 2: All available defenders to choose from [33]
 vector <OpFORS> defenderCollection{
@@ -62,20 +93,43 @@ vector <OpFORS> defenderCollection{
     {"Jager", "AR"},
     {"Jager", "Shotgun"},
     {"Bandit", "MP7"},
-    {"Bandit", "Shotgun"}
-}
-
+    {"Bandit", "Shotgun"},
+    {"Frost", "That old gun"},
+    {"Frost", "SHotgun"},
+    {"Valk", "Shotgun"},
+    {"Valk", "MPX"},
+    {"Cav", "Shotty"},
+    {"Cav", "AR"},
+    {"Echo", "Shotgun"},
+    {"Echo", "MP5"},
+    {"Mira", "Vector"},
+    {"Mira", "Shotgun"},
+    {"Lesion", "Shotgun"},
+    {"LEsion", "SMG"},
+    {"Ela", "Scorpion"},
+    {"Ela", "Shotgun"},
+    {"Vigil", "BosG"},
+    {"Vigil", "AR"},
+    {"Maestro", "LMG"},
+    {"Maestro", "Shotgun"},
+    {"Alibi", "SMG"},
+    {"Alibi", "Shotgun"},
+};
 // Method 1: Pick a random attacker
 OpFORS attackerChoice(){
     // Select a random element from "attackerCollection"
     // srand(0);
     int attColSize = attackerCollection.size(); // Position of element in the colleciton
     // Obtain a random index number
-    int randomlySelectedOPindex = rand() % attColSize;
+    int attRandomIndex = rand() % attColSize;
     // Print the element (the op) at that position
-    return attackerCollection[randomlySelectedOPindex];
-};
+    return attackerCollection[attRandomIndex];
+}
 // Method 2: Pick a random defender
 OpFORS defenderChoice(){
     // Same as method "attackerChoice"
-};
+    int defCollSize = defenderCollection.size();
+    // Obtain random index number
+    int defRandomIndex = rand() % defCollSize;
+    return defenderCollection[defRandomIndex];
+}
