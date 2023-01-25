@@ -9,7 +9,7 @@ using namespace std;
 
 // Container 1: All available attackers to choose from [33]
 vector <OpFORS> attackerCollection{
-    // Same Op can have different weapons (stricking to primary only)
+    // Same Op can have different weapons (sticking to primary only)
     {"Sledge", "Assault Rifle"},
     {"Sledge", "Shotgun"},
     {"Thatcher", "Small mag AR"},
@@ -44,18 +44,38 @@ vector <OpFORS> attackerCollection{
     {"Jackal", "Shotgun"}
 };
 // Container 2: All available defenders to choose from [33]
-vector <OpFORS> defenderCollection;
+vector <OpFORS> defenderCollection{
+    {"Smoke", "Shotgun"},
+    {"Smoke", "FMG"},
+    {"Mute", "Shotgun"},
+    {"Mute", "SubMachineGun"},
+    {"Castle", "UMP45"},
+    {"Castle", "Shotgun"},
+    {"Pulse", "Shotgun"},
+    {"Pulse", "UMP45"},
+    {"Doc", "MP5"},
+    {"Doc", "P90"},
+    {"Doc", "Shotgun"},
+    {"Rook", "MP5"},
+    {"Rook", "P90"},
+    {"Rook", "Shotgun"},
+    {"Jager", "AR"},
+    {"Jager", "Shotgun"},
+    {"Bandit", "MP7"},
+    {"Bandit", "Shotgun"}
+}
+
 // Method 1: Pick a random attacker
-void attackerChoice(){
+OpFORS attackerChoice(){
     // Select a random element from "attackerCollection"
-    srand(0);
+    // srand(0);
     int attColSize = attackerCollection.size(); // Position of element in the colleciton
     // Obtain a random index number
     int randomlySelectedOPindex = rand() % attColSize;
     // Print the element (the op) at that position
-    return attackerCollection[randomlySelectedOP];
+    return attackerCollection[randomlySelectedOPindex];
 };
 // Method 2: Pick a random defender
-void defenderChoice(){
-
+OpFORS defenderChoice(){
+    // Same as method "attackerChoice"
 };
