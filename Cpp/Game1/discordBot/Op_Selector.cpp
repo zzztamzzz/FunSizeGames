@@ -137,7 +137,7 @@ vector <OpFORS> defenderCollection{
 // Method 1: Pick a random attacker
 OpFORS attackerChoice(){
     // Select a random element from "attackerCollection"
-    // srand(0);
+    srand(0);
     int attColSize = attackerCollection.size(); // Position of element in the colleciton
     // Obtain a random index number
     int ChosenAttacker = rand() % attColSize;
@@ -147,8 +147,14 @@ OpFORS attackerChoice(){
 // Method 2: Pick a random defender
 OpFORS defenderChoice(){
     // Same as method "attackerChoice"
+    srand(0);
     int defCollSize = defenderCollection.size();
     // Obtain random index number
     int defRandomIndex = rand() % defCollSize;
     return defenderCollection[defRandomIndex];
+}
+int main(){
+    cout << "The attacker and weapon chosen is: " << attackerChoice << endl;
+    cout << "Defender and weapon is: " << defenderChoice; << endl;
+    return 0;
 }
