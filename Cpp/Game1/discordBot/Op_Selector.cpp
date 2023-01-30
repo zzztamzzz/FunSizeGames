@@ -154,7 +154,15 @@ OpFORS defenderChoice(){
     return defenderCollection[defRandomIndex];
 }
 int main(){
-    cout << "The attacker and weapon chosen is: " << attackerChoice << endl;
-    cout << "Defender and weapon is: " << defenderChoice; << endl;
-    return 0;
+    int choice = 0;
+    cout << "Are you:\n1.Attacking\n2.Defending?\nSelect a number:" << endl;
+    cin >> choice;
+    if (choice == 1){
+        cout << "The attacker and weapon chosen is: " << attackerChoice << endl;
+    }
+    if (choice == 2){
+        cout << "Defender and weapon is: " << defenderChoice << endl;
+    }
+    // cout << "Incorrect choice!" << endl;
+    // return 0;
 }
