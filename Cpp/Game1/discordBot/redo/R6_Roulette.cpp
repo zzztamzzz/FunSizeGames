@@ -2,24 +2,24 @@
 #include <vector>
 #include <random>
 #include <ctime>
+#include <fstream>
+
 using namespace std;
 
+struct opFors
+{
+    /* data */
+    string name = "";
+};
+
+
 // Container 1: Choice of attackers
-vector <string> attackChars{
-    "Sledge", "Thatcher",
-    "Ash", "Thermite",
-    "Twitch", "Monty",
-    "IQ", "Blitz",
-    "Fuze", "Glaz"
-};
+vector <opFors> attackChars{};
+// Add the operators read from the text file "attackers.txt"
+fstream myAttackers;
+myAttackers.open("pool_of_attackers.txt");
 // Container 2: Choice of defenders
-vector <string> defenderChars{
-    "Smoke", "Mute",
-    "Pulse", "Castle",
-    "Kapkan", "Tchanka",
-    "Rook", "Doc",
-    "Jager", "Bandit",
-};
+vector <string> defenderChars{};
 // Method 1, return a randomly selected attacker
 string chosenAttacker(){
     // Container intex number
