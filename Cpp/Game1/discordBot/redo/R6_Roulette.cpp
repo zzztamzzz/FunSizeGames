@@ -3,23 +3,18 @@
 #include <random>
 #include <ctime>
 #include <fstream>
+#include "R6_Roulette.h"
 
 using namespace std;
-
-// struct opFors
-// {
-//     /* data */
-//     string name = "";
-// };
-
-
 // Container 1: Choice of attackers
-vector <string> attackChars{};
-// Add the operators read from the text file "attackers.txt"
-fstream myAttackers;
-myAttackers.open("pool_of_attackers.txt");
+vector <string> attackerChars{
+    ""
+};
 // Container 2: Choice of defenders
-vector <string> defenderChars{};
+vector <string> defenderChars{
+    ""
+};
+
 // Method 1, return a randomly selected attacker
 string chosenAttacker(){
     // Container intex number
