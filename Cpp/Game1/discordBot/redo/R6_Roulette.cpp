@@ -6,15 +6,15 @@
 
 using namespace std;
 
-struct opFors
-{
-    /* data */
-    string name = "";
-};
+// struct opFors
+// {
+//     /* data */
+//     string name = "";
+// };
 
 
 // Container 1: Choice of attackers
-vector <opFors> attackChars{};
+vector <string> attackChars{};
 // Add the operators read from the text file "attackers.txt"
 fstream myAttackers;
 myAttackers.open("pool_of_attackers.txt");
