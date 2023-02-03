@@ -38,8 +38,16 @@ vector <string> defenderChars{
     "Thunderbird", "Thorn",
     "Azami", "Solis"
 };
+// Container 3: Types of weapons to pick
+vector <string> weaponChoice{
+    "Assault Rifles",
+    "Battle Rifles/DMR",
+    "Shotguns",
+    "SMG",
+    "LMG"
+};
 
-// Method 1, return a randomly selected attacker
+// Method 1: Return a randomly selected attacker from container 1
 string chosenAttacker(){
     // Container intex number
     srand(time(NULL));
@@ -54,6 +62,7 @@ string chosenAttacker(){
     */
     return attackerChars[randomly];
 }
+// Method 2: Return a randomly selected defender from container 2
 string chosenDefender(){
     srand(time(NULL));
     // Position of defenders in the string vector
@@ -61,7 +70,41 @@ string chosenDefender(){
     int chosen = rand() % position;
     return defenderChars[chosen];
 }
+// Method 3: Return a randomly selected weapon of choice
+string randomWeapon(){
+    // Randomly select a gun. 
+    srand(time(NULL));
+    int containerIndex = 0;
+    int chosen = rand() % containerIndex;
+    return weaponChoice.at(chosen);
+}
 
+
+int main(){
+    int userChoice = 0;
+    // Header
+    cout << "-----------Welcome to R6S Roulette-----------" << endl;
+    do
+    {
+        cout << "Are you: 1) Attacking OR 2) Defending\nType your choice" << endl;
+        cin >> userChoice;
+        if(userChoice == 1){
+            cout << "You are to play the operator: " << chosenAttacker() << endl;
+            cout << "The weapons to choose from are: " << endl;
+            for(int i = 0; i < weaponChoice.size(); i++){
+                cout << weaponChoice.at(i) << endl;
+            }
+            cout << "And you will play: " << randomWeapon() << endl;
+            cout << "If weapon not available, pick the 3rd successor from the list\nContinue until you have an avaialbe weapon" << endl;
+        }
+        if(userChoice == 2){
+            cout << "Your defender chosen at random is: " << chosenDefender() << endl;
+            // cout << "The weapons to choose from are: " << randomWeapon() << endl;
+            // cout << "If weapon not available, pick the 3rd successor from the list\nContinue until you have an avaialbe weapon" << endl;
+        }
+    } while (/* condition */userChoice > 2);
+}
+/*
 int main(){
     cout << "Welcome to R6 Roulette. Are you\n1.Attacking\n2.Defending\n" << endl;
     int userChoice = 0;
@@ -74,3 +117,4 @@ int main(){
     }
     else return 0;
 }
+*/
