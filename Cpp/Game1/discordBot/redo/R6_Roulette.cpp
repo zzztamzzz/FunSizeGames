@@ -44,7 +44,7 @@ string chosenAttacker(){
     // Container intex number
     srand(time(NULL));
     // Position of attackers in the string vector
-    int index = attackChars.size();
+    int index = attackerChars.size();
     // randomly choose a number between 0 and max length of container
     int randomly = rand() % index;
     /*
@@ -52,7 +52,7 @@ string chosenAttacker(){
     cout << "Testing random number to to be: " << randomly << endl;
     cout << "Test, random op is: " << attackChars[randomly] << endl;
     */
-    return attackChars[randomly];
+    return attackerChars[randomly];
 }
 string chosenDefender(){
     srand(time(NULL));
