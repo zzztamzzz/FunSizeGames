@@ -74,7 +74,7 @@ string chosenDefender(){
 string randomWeapon(){
     // Randomly select a gun. 
     srand(time(NULL));
-    int containerIndex = 0;
+    int containerIndex = weaponChoice.size();
     int chosen = rand() % containerIndex;
     return weaponChoice.at(chosen);
 }
