@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/rogzephg15/Documents/GitHub/FunSizeGames/Langs/C/C/Game1",
-      "program": "/home/rogzephg15/Documents/GitHub/FunSizeGames/Langs/C/C/Game1/build/Debug/outDebug",
+      "cwd": "/home/zephwsl/repos/FunSizeGames/Langs/C/C/Game1",
+      "program": "/home/zephwsl/repos/FunSizeGames/Langs/C/C/Game1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

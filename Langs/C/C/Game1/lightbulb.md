@@ -8,3 +8,7 @@ Keep it local, no need to introduce online multiplayer capabilities.
 Make it a little bloody and quite an extensive amount of gore? (vfx update ig)
 For now just go with punching and kicking lol.
 Inspiration from Drunken Wrestlers :)
+
+OR
+
+make a shooter game. Been enjoying this category for a while now.
