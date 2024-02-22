@@ -97,6 +97,16 @@ string leQuestion(){
 }
 int main(){
     cout << "Welcome to the quiz" <<  endl;
+    cout << "To respond to a question, type in the choices and hit ENTER key" << endl;
+    // functions calls
+
+    // call question caller
+
+    // call answer checker function
+
+    // keep track of the user score
+
+    // keep user updated about current score
 
 }
 // Check if answer is correct
