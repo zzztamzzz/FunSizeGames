@@ -1,0 +1,33 @@
+Selecting 10 random questions...
+
+Question 1: Q40: Who is the Chief Justice of the United States now?
+
+Question 2: Q24: Who does a U.S Senator represent?
+
+Question 3: Q3: The idea of self-government is the first 3 words of the Constitution. What are they?"
+
+Question 4: Q21: The House of Representatives has how many voters?
+
+Question 5: Q29: What is the name of the current Vice President of the United States?
+
+Question 6: Q32: Who is the Commander in Chief of the military?
+
+Question 7: Q27: In what month do we vote for President?
+
+Question 8: Q23: Name your U.S Representative
+
+Question 9: Q6: What is one of the rights by the First Amendment?
+
+Question 10: Q20: Who is one of your state's Senators now?
+
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
+Enter your response: 
