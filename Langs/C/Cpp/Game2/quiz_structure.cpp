@@ -90,7 +90,10 @@ void select_random_questions(const vector<Quiz>& questions, size_t count = 10) {
         if (find(selectedIndexes.begin(), selectedIndexes.end(), index) == selectedIndexes.end()) {
             selectedIndexes.push_back(index);
             // Print the selected question and its answers with a serial number
-            cout << "Question " << selectedIndexes.size() << ": " << questions[index].question_text << endl;
+            cout << "Question " << selectedIndexes.size() << ": ";
+            cout << questions[index].question_text.substr(3) << endl;
+            // Print the choices to choose:
+            cout << "Enter your response(s):" << endl;
             // cout << "Correct Answers:" << endl;
             // for (const auto& answer : questions[index].correct_answers) {
             //     cout << "* " << answer.a_text << endl;
@@ -140,14 +143,14 @@ int main() {
         */
        // Check if questions are loaded
     // cout << "Selecting a random question..." << endl;
-    int rand_count = 0;
+    // int rand_count = 0;
     if (!questions.empty()) {
         cout << "Selecting 10 random questions...\n" << endl;
         select_random_questions(questions); // This will select and print 10 random questions
-        for(int i = 0; i <= 10; i++){
-            cout << "Enter your response: " << endl;
+        // for(int i = 0; i <= 10; i++){
+        //     cout << "Enter your response: " << endl;
 
-        }
+        // }
     } else {
         cout << "No questions available. Please check the file path and format." << endl;
     }

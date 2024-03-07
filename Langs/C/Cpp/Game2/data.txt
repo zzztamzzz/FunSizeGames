@@ -1,71 +1,71 @@
-Q1: What is the Supreme Law of the Land?
+Q: What is the Supreme Law of the Land?
 - In Unison We Strive
 * The Constitution
 - The Liberation Of Freedom
 - The Bill of Rights
 
-Q2: What does the Constitution do?
+Q: What does the Constitution do?
 * Sets up the government
 * Defines the government
 - Controls and gives access to the government employees
 * Provides basic rights to the Americans
 
-Q3: The idea of self-government is the first 3 words of the Constitution. What are they?"
+Q: The idea of self-government is the first 3 words of the Constitution. What are they?"
 - Our United Nation
 * We The People
 - Us Country Men
 - God Bless America
 
-Q4: What is an Amendment?
+Q: What is an Amendment?
 * A change (to the Constitution)
 * An addition (to the Constitution)
 - Safety Law
 - A recommendation letter
 
-Q5: What do we call the first 10 amendments of the Constitution?
+Q: What do we call the first 10 amendments of the Constitution?
 - The first 10 amendments
 - Rules of the People
 * The Bill of Rights
 - Notice of Justification.
 
-Q6: What is one of the rights by the First Amendment?
+Q: What is one of the rights by the First Amendment?
 * Speech
 * Religion
 * Assembly
 * Press 
 * Petition the government
 
-Q7: How many amendments does the Constitution have?
+Q: How many amendments does the Constitution have?
 - 13
 - 51
 - 101
 * 27
 
-Q8: What did the Decleration of Independence do?
+Q: What did the Decleration of Independence do?
 * Announced our independence (from Great Britain)
 - Mentioned that the United States should be free (from Great Britain)
 * Declared our independence (from Great Britain) 
 * Said that the United States is free (from Great Britain)
 
-Q9: What are two rights in the Decleration of Independence?
+Q: What are two rights in the Decleration of Independence?
 * Life
 * Liberty
 * Pursuit of Happiness
 - Speech
 - Religion
 
-Q10: What is the freedom of religion?
+Q: What is the freedom of religion?
 - You may choose to practice a religion from a select list
 * You can practice any religion, or not practice a religion
 - You can enforce others to practice the same religion as you
 
-Q11: What is the economic system of the United States?
+Q: What is the economic system of the United States?
 * Capitalist Economoy
 * Market Economoy
 - Socialist
 - Communism 
 
-Q12: What is "the rule of Law"?
+Q: What is "the rule of Law"?
 * Everyone must follow the Law
 * Leaders must obey the Law
 * Government must obey the Law
@@ -73,7 +73,7 @@ Q12: What is "the rule of Law"?
 - Exceptions are allowed for Leaders
 - Only break the law when it is necessary
 
-Q13: Name one branch or part of the government.
+Q: Name one branch or part of the government.
 * Congress
 * Legislative
 * President
@@ -82,56 +82,56 @@ Q13: Name one branch or part of the government.
 * Judicial 
 * The Courts
 
-Q14: What stops one branch of government from becoming too powerful?
+Q: What stops one branch of government from becoming too powerful?
 * Checks and balances
 * Separation of power
 - Dice roll
 - Unified and mutual collusion
 
-Q15: Who is in charge of the Executive branch?
+Q: Who is in charge of the Executive branch?
 * The President
 - Congress
 - Judicial
 - The Courts
 
-Q16: Who makes Federal laws?
+Q: Who makes Federal laws?
 * Congress
 * Senate and House (of Representatives)
 * (U.S or national) legislature
 - President
 
-Q17: What are the two parts of the U.S. Congress?
+Q: What are the two parts of the U.S. Congress?
 * The Senate and House (of Representatives)
 
-Q18: How many U.S senators are there?
+Q: How many U.S senators are there?
 - 52
 * 100
 - 47
 - 5
 
-Q19: We elect a U.S Senator for how many years?
+Q: We elect a U.S Senator for how many years?
 * 6
 - 4
 - 5
 - 10
 
-Q20: Who is one of your state's Senators now?
+Q: Who is one of your state's Senators now?
 * Elizabeth Warren
 * Ed Markey 
 
-Q21: The House of Representatives has how many voters?
+Q: The House of Representatives has how many voters?
 * 435
 - 619
 - 1000
 - 52
 
-Q22: We elect a U.S. Representative for how many years?
+Q: We elect a U.S. Representative for how many years?
 * 2
 - 3
 - 4
 - 1
 
-Q23: Name your U.S Representative
+Q: Name your U.S Representative
 * Katherine Clark
 * Ayanna Pressley
 * Jake Auchincloss
@@ -142,54 +142,54 @@ Q23: Name your U.S Representative
 * Bill Keating
 * Stephen Lynch
 
-Q24: Who does a U.S Senator represent?
+Q: Who does a U.S Senator represent?
 * All people of the State
 - Other members of State government
 - Only the Senator themself
 
-Q25: Why do some states have more Representatives than others?
+Q: Why do some states have more Representatives than others?
 * (because of) the state's population
 * (beacuse) they have more people
 * (because) some states have more people
 - (because of) choice and free will
 
-Q26. We elect a President for how many years?
+Q: We elect a President for how many years?
 * 4
 - 5
 - 2
 - 8
 
-Q27: In what month do we vote for President?
+Q: In what month do we vote for President?
 - January
 - May
 * November
 - December
 
-Q28: What is the name of the current President of the United States?
+Q: What is the name of the current President of the United States?
 * Joe Biden
 
-Q29: What is the name of the current Vice President of the United States?
+Q: What is the name of the current Vice President of the United States?
 * Kamala Harris
 
-Q30: If the President can no longer serve, who becomes President?
+Q: If the President can no longer serve, who becomes President?
 * the Vice President
 
-Q31: If both the President and Vice President can no longer serve, who becomes President?
+Q: If both the President and Vice President can no longer serve, who becomes President?
 * The Speaker of the House
 
-Q32: Who is the Commander in Chief of the military?
+Q: Who is the Commander in Chief of the military?
 * The President 
 
-Q33: Who signs bills to become laws?
+Q: Who signs bills to become laws?
 * The President
 
-Q34: Who vetoes bills?
+Q: Who vetoes bills?
 * The President
 
-Q35: What does the President's Cabinet do?
+Q: What does the President's Cabinet do?
 * Advises the President 
 
-Q36: What are two Cabinet-level positions?
+Q: What are two Cabinet-level positions?
 * Secretary of Agriculture
 * Secretary of Commerce
 * Secretary of Defense
@@ -207,32 +207,30 @@ Q36: What are two Cabinet-level positions?
 * Attorney General
 * Vice President
 
-Q37: What does the Judicial branch do?
+Q: What does the Judicial branch do?
 * Review laws
 * Explain laws
 * Resolve disputes (disagreements)
 * Decides if a law against the Constitution
 
-Q38: What is the highest court in the United States?
+Q: What is the highest court in the United States?
 * The Supreme Court
 
-Q39: How many justices are on the Supreme Court?
+Q: How many justices are on the Supreme Court?
 * Nine Justices make up the current Supreme Court: one Chief Justice and eight Associate Justices
 
-Q40: Who is the Chief Justice of the United States now?
+Q: Who is the Chief Justice of the United States now?
 * John Roberts
 
-Q41: Under our Constitution, some powers belong to the federal government. What is one power of the federal government?
+Q: Under our Constitution, some powers belong to the federal government. What is one power of the federal government?
 * to print money
 * to declare war
 * to create and army
 * to make treaties
 
-Q42: Under our Constitution, some powers belong to the states. What is one power of the states? 
+Q: Under our Constitution, some powers belong to the states. What is one power of the states? 
 * provide schooling and education
 * provide protection (police)
 * provide safety (fire departments)
 * give a driver's license 
-* approve zoning and land use
-
-Q43: 
+* approve zoning and land use 

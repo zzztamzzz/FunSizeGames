@@ -1,33 +1,32 @@
 Selecting 10 random questions...
 
-Question 1: Q40: Who is the Chief Justice of the United States now?
+Question 1: In what month do we vote for President?
+Enter your response(s):
 
-Question 2: Q24: Who does a U.S Senator represent?
+Question 2: What is the economic system of the United States?
+Enter your response(s):
 
-Question 3: Q3: The idea of self-government is the first 3 words of the Constitution. What are they?"
+Question 3: What are two rights in the Decleration of Independence?
+Enter your response(s):
 
-Question 4: Q21: The House of Representatives has how many voters?
+Question 4: What does the Constitution do?
+Enter your response(s):
 
-Question 5: Q29: What is the name of the current Vice President of the United States?
+Question 5: What is one of the rights by the First Amendment?
+Enter your response(s):
 
-Question 6: Q32: Who is the Commander in Chief of the military?
+Question 6: How many justices are on the Supreme Court?
+Enter your response(s):
 
-Question 7: Q27: In what month do we vote for President?
+Question 7: What are the two parts of the U.S. Congress?
+Enter your response(s):
 
-Question 8: Q23: Name your U.S Representative
+Question 8: If the President can no longer serve, who becomes President?
+Enter your response(s):
 
-Question 9: Q6: What is one of the rights by the First Amendment?
+Question 9: Who is the Commander in Chief of the military?
+Enter your response(s):
 
-Question 10: Q20: Who is one of your state's Senators now?
+Question 10: What is the freedom of religion?
+Enter your response(s):
 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
-Enter your response: 
