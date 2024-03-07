@@ -1,83 +1,164 @@
-// File responsible to sort through the question data set
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <algorithm> // For sorting, if needed
 #include <random>
 
 using namespace std;
 
-/*
-Q: ...
-    '*'xN Correct N responses
-    '-'xM Incorrect M reponses 
-*/
-// Keep at most 5 choices for simplicity
-// So, 0 <= N, M <= 5; N+M = 5
-
 struct Answer
 {
-    /* data */
     string a_text = "";
-    // Assume user response is wrong, modify after mathcing later
-    bool isCorrect;
+    bool isCorrect; // This might be redundant with the new approach but can be kept for clarity or future uses
 };
 
-struct Question
+struct Quiz
 {
-    /* data */
-    string q_text = "";
-    vector <Answer> answers;
+    string question_text = "";
+    vector<Answer> correct_answers;
+    vector<Answer> incorrect_answers;
 };
 
 // read question file
-void loadr(const string& filename, vector <Question>& questions){
-    // ifstream file("Q_A_set.txt");
+void load_question_file(const string& filename, vector<Quiz>& questions) {
     ifstream file(filename);
     string line;
-    Question currentQ;
+    Quiz currentQ;
     bool parseQs = true;
-    int q_count = 0;
-
-    if(!file.is_open()){
+    // File not found
+    if (!file.is_open()) {
         cout << "Error opening file" << endl;
         return;
     }
-
+    /* 
+    Parse the input text file for all its contents
+    An empty line separates the question and it's possible answers
+    We have questions which started with "Q: ..."
+    Then we have possible answers which:
+        "* ..." for correct responses
+        "- ..." for incorrect responses
+    Sort through with these variables in the file
+    */
     while (getline(file, line)) {
+        
         if (line.empty()) { // End of current question block
             questions.push_back(currentQ);
-            currentQ = Question(); // Reset for the next question
+            currentQ = Quiz(); // Reset for the next question
             parseQs = true;
         } else if (parseQs) {
-            currentQ.q_text = line.substr(3); // Skip "Q: "
+            // currentQ.question_text = line.substr(3); // Skip "Q: "
+            currentQ.question_text = line;
             parseQs = false;
-            q_count++;
-        } else { // Parsing answers
+        }
+        // Parsing the answers section
+        else {
             Answer answer;
             answer.isCorrect = line[0] == '*';
             answer.a_text = line.substr(2); // Skip "* " or "- "
-            currentQ.answers.push_back(answer);
+            if (answer.isCorrect) {
+                currentQ.correct_answers.push_back(answer);
+            } else {
+                currentQ.incorrect_answers.push_back(answer);
+            }
         }
     }
-    if (!currentQ.q_text.empty()) {
+    if (!currentQ.question_text.empty()) {
         questions.push_back(currentQ);
     }
-    
     file.close();
-    cout << "Total Questions: " << q_count << endl;
 }
 
-int main() {
-    cout << "Here's the list of questions" << endl;
-    vector<Question> questions;
-    loadr("Q_A_set.txt", questions);
+/*
+Function to randomly select a single question.
+Selection needs to be made from the loaded text file
+*/
 
-    // Example usage
-    for (const auto& question : questions) {
-        cout << question.q_text << std::endl;
-        for (const auto& answer : question.answers) {
-            cout << (answer.isCorrect ? "* " : "- ") << answer.a_text << endl;
+void select_random_questions(const vector<Quiz>& questions, size_t count = 10) {
+    vector<int> selectedIndexes; // To keep track of selected questions' indexes
+    size_t questionsSize = questions.size();
+
+    // Ensure we don't attempt to select more questions than available
+    count = min(questionsSize, count);
+
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> distr(0, questionsSize - 1);
+
+    while (selectedIndexes.size() < count) {
+        int index = distr(gen);
+        // Check if the index is already used
+        if (find(selectedIndexes.begin(), selectedIndexes.end(), index) == selectedIndexes.end()) {
+            selectedIndexes.push_back(index);
+            // Print the selected question and its answers with a serial number
+            cout << "Question " << selectedIndexes.size() << ": ";
+            cout << questions[index].question_text.substr(3) << endl;
+            // Print the choices to choose:
+            cout << "Enter your response(s):" << endl;
+
+            /*
+            Distinguish between correct and incorrects from parsing
+            corrects have * sign
+            incorrects have - sign
+            */
+            // cout << "Correct Answers:" << endl;
+            // for (const auto& answer : questions[index].correct_answers) {
+            //     cout << "* " << answer.a_text << endl;
+            // }
+            // cout << "Incorrect Answers:" << endl;
+            // for (const auto& answer : questions[index].incorrect_answers) {
+            //     cout << "- " << answer.a_text << endl;
+            // }
+            cout << endl; // Separate questions for readability
         }
+    }
+}
+
+// Driver to check logic
+int main() {
+    // cout << "Here's the list of questions:\n" << endl;
+    vector<Quiz> questions;
+    load_question_file("data.txt", questions);
+    // int q_count = 0;
+    // for (const auto& question : questions) {
+    //     if(question.question_text != ""){
+    //         q_count++;
+    //     }
+    // }
+    // cout << "Total Questions in file: " << q_count << endl;
+
+    // cout << "Selected random question is:" << endl;
+    // cout << select_random_question(questions) << endl;
+    // Example usage
+    // for (const auto& question : questions) {
+        /*
+        Print in this order
+        Question...
+        Correct choices..
+        Incorrects...
+        */
+        /*
+        cout << question.question_text << endl;
+        cout << "Correct Answers:" << endl;
+        for (const auto& answer : question.correct_answers) {
+            cout << "* " << answer.a_text << endl;
+        }
+        cout << "Incorrect Answers:" << endl;
+        for (const auto& answer : question.incorrect_answers) {
+            cout << "- " << answer.a_text << endl;
+        }
+        */
+       // Check if questions are loaded
+    // cout << "Selecting a random question..." << endl;
+    // int rand_count = 0;
+    if (!questions.empty()) {
+        cout << "Selecting 10 random questions...\n" << endl;
+        select_random_questions(questions); // This will select and print 10 random questions
+        // for(int i = 0; i <= 10; i++){
+        //     cout << "Enter your response: " << endl;
+
+        // }
+    } else {
+        cout << "No questions available. Please check the file path and format." << endl;
     }
     return 0;
 }
