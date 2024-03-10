@@ -103,15 +103,15 @@ void select_random_questions(const vector<Quiz>& questions, size_t count = 10) {
 }
 
 // Driver to check logic
-// int main() {
-//     // cout << "Here's the list of questions:\n" << endl;
-//     vector<Quiz> questions;
-//     load_question_file("data.txt", questions);
-//     if (!questions.empty()) {
-//         // cout << "Selecting 10 random questions...\n" << endl;
-//         select_random_questions(questions);
-//     } else {
-//         cout << "No questions available. Please check the file path and format." << endl;
-//     }
-//     return 0;
-// }
+int main() {
+    // cout << "Here's the list of questions:\n" << endl;
+    vector<Quiz> questions;
+    load_question_file("data.txt", questions);
+    if (!questions.empty()) {
+        // cout << "Selecting 10 random questions...\n" << endl;
+        select_random_questions(questions);
+    } else {
+        cout << "No questions available. Please check the file path and format." << endl;
+    }
+    return 0;
+}
