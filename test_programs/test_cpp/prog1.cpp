@@ -95,5 +95,5 @@ int main(){
     else {
       std::cout << "Functionality not available" << std::endl;
     }
-  } while (choice != 0); 
+  } while (choice <= 0); 
 }
